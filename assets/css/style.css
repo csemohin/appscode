@@ -1,0 +1,565 @@
+/* ======================
+	Global CSS start
+========================*/
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,400i,500,500i,600,600i,700,700i,800');
+
+body {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+p {
+	font-family: 'Raleway', sans-serif;
+	font-size: 17px;
+	font-weight: 400;
+	line-height: 1.8;
+	color: #32325d;
+	margin-bottom: 15px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Raleway', sans-serif;
+	font-weight: normal;
+	text-transform: normal;
+	font-style: normal;
+	margin-top: 0px;
+	color: #32325d;
+	font-weight: 600;
+
+
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+	font-family: 'Raleway', sans-serif;
+	color: inherit;
+}
+
+h1 {
+	font-size: 30px;
+	line-break: 40px;
+}
+
+h2 {
+	font-size: 28px;
+	line-height: 38px;
+}
+
+h3 {
+	font-size: 24px;
+	line-height: 34px;
+}
+
+h4 {
+	font-size: 18px;
+	line-height: 32px;
+}
+
+h5 {
+	font-size: 16px;
+	line-height: 26px;
+}
+
+h6 {
+	font-size: 14px;
+	line-height: 24px;
+}
+
+.section-padding {
+	padding: 100px 0;
+}
+
+.container.section {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+/* ======================
+	Global CSS End
+========================*/
+
+/* ======================
+	Header area star
+========================*/
+.main-menu ul {
+	margin: 0;
+	padding: 0;
+}
+
+.main-menu li {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+.main-menu li a {
+	display: block;
+	font-size: 14px;
+	text-transform: uppercase;
+	font-weight: 600;
+	padding: 8px 20px;
+	border-radius: 50px;
+	color: #fff;
+}
+
+.main-menu li a span {
+	margin-left: 10px;
+}
+
+.main-menu li a:hover {
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+.main-menu {
+	margin-top: 7px;
+}
+
+ul.doropdown-menu {
+	position: absolute;
+	background: #fff;
+	width: 500px;
+	padding: 25px 8px;
+	border-radius: 5px;
+	margin-left: -25px;
+	margin-top: 10px;
+	display: none;
+	box-shadow: 2px 2px 27px rgba(1, 1, 1, .2)
+}
+
+ul.doropdown-menu li {
+	text-align: center
+}
+
+.main-menu li:hover ul.doropdown-menu {
+	display: block;
+}
+
+ul.doropdown-menu:before {
+	position: absolute;
+	top: -10px;
+	left: 70px;
+	display: inline-block;
+	border-right: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	border-left: 10px solid transparent;
+	border-bottom-color: #fff;
+	content: '';
+}
+
+ul.doropdown-menu li {
+	width: 156px;
+	margin: 0;
+}
+
+ul.doropdown-menu li a {
+	color: #333;
+	text-transform: capitalize;
+}
+
+ul.doropdown-menu li>a:hover {
+	background: #e9f0fd;
+	color: #3467d2;
+}
+
+nav.navbar {
+	background: transparent;
+}
+
+.nav-button .button {
+	box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+	height: 40px;
+	padding: 0 30px;
+	font-size: 14px;
+	text-transform: uppercase;
+	font-weight: 600;
+	color: #32325D;
+	margin-left: 15px;
+}
+
+.nav-button {
+	margin-top: 5px;
+}
+
+.nav-button .button img {
+	margin-left: 10px;
+}
+
+header#header {
+	position: absolute;
+	width: 100%;
+	margin-top: 10px;
+}
+
+/* fixd nav */
+
+body.fixed-nav #header {
+	position: fixed;
+	background: #fff;
+	box-shadow: 0 0 60px rgba(0, 0, 0, 0.15);
+	top: 0;
+	margin-top: 0;
+	z-index: 99;
+	padding: 6.5px 0;
+}
+
+body.fixed-nav #header ul li a {
+	color: #333;
+}
+
+body.fixed-nav .logo-default {
+	display: none;
+}
+
+a.navbar-item.fixd-item {
+	display: none;
+}
+
+body.fixed-nav a.navbar-item.fixd-item {
+	display: block;
+}
+/* ======================
+	Header area End
+========================*/
+
+/* ======================
+	Hero area Start
+========================*/
+.hero-area {
+	background-image: url(../images/inner-banner-bg.svg);
+	background-size: cover;
+	background-position: center;
+	padding: 166px 0 100px;
+
+}
+
+.button {
+	letter-spacing: 1px;
+	font-family: 'Raleway', sans-serif;
+}
+
+.button img {
+	width: 20px;
+	height: auto;
+}
+
+/* Hero Area */
+.hero-inner h1 {
+	color: #fff;
+	font-weight: 700;
+	margin-bottom: 15px;
+}
+
+.hero-inner p {
+	font-size: 18px;
+	color: #fff;
+	font-weight: 400;
+	line-height: 30px;
+	margin-bottom: 20px;
+}
+
+.buttons-area {
+	display: inline-block;
+}
+
+.buttons-area .button i.fa,
+.buttons-area .button img {
+	margin-right: 8px;
+}
+
+.buttons-area .button {
+	font-size: 14px;
+	font-weight: 500;
+	padding: 6px 15px;
+	height: 37px;
+	line-height: 14px;
+	color: #fff;
+	border: none;
+}
+
+.button.docs {
+	background: #17b9e6;
+}
+
+.button.helen {
+	background: #3bb878;
+}
+
+.button.github {
+	color: #000;
+}
+/* ======================
+	Hero area End
+========================*/
+
+/* ======================
+Installation area start
+========================*/
+/* for tab */
+.section-title h2 {
+	font-size: 32px;
+	margin-bottom: 30px;
+}
+
+
+.nav-menu-area {
+	padding: 10px;
+	border-bottom: 1px solid #ddd;
+}
+
+.tab-area {
+	border: 1px solid #ddd;
+	border-radius: 5px;
+}
+
+.b-tab textarea {
+	width: 100%;
+	border: none;
+	padding: 15px;
+	display: inline-block;
+	height: 250px;
+	font-family: monospace;
+	line-height: 24px;
+	color: #666;
+}
+
+.b-tab textarea:focus {
+	outline: none;
+}
+
+.b-tab {
+	display: none;
+}
+
+.b-tab.active {
+	display: block;
+}
+
+.b-nav-tab {
+	display: inline-block;
+	color: #3D78E5;
+	font-size: 14px;
+	font-weight: 600;
+	padding: 5px 10px;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+button.b-nav-tab {
+	background: transparent;
+	border: none;
+}
+
+.b-nav-tab.active {
+	color: #fff;
+	background: linear-gradient(45deg, #4949A3, #7272E9, #4d4dcb);
+
+}
+/* ======================
+Installation area End
+========================*/
+
+/* ======================
+Product area start
+========================*/
+.single-product {
+	box-shadow: 0 0 20px 0 rgba(20, 52, 92, 0.06);
+	display: inline-block;
+	padding: 20px 30px;
+	overflow: hidden;
+	width: 100%;
+}
+
+.single-product .icon {
+	width: 18%;
+	float: left;
+	margin-right: 20px;
+	margin-top: 17px;
+}
+
+.product-content {
+	float: left;
+	width: 70%;
+}
+
+.icon img {
+	max-width: 50px;
+}
+
+.product-content h2 {
+	margin-bottom: 20px;
+	font-size: 28px;
+}
+
+.product-content p {
+	margin-bottom: 0;
+}
+/* ======================
+	Product area End
+========================*/
+
+/* ======================
+	Schedule area start
+========================*/
+.schedule-title h2 {
+	font-size: 30px;
+	color: #3bb878;
+	margin-bottom: 20px;
+}
+
+.schedule-title p {
+	font-size: 18px;
+	font-weight: 400;
+	-webkit-font-smoothing: antialiased;
+	margin-bottom: 60px;
+}
+
+.schedule-button {
+	margin: 0 auto;
+}
+
+.schedule-button .button {
+	font-size: 14px;
+	font-weight: 600;
+	text-transform: uppercase;
+	box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+	padding: 0 30px;
+	height: 50px;
+	border: none;
+}
+
+a.button.demo-btn {
+	background: #3bb878;
+	color: #fff;
+	margin-right: 15px;
+}
+
+a.button.join-us img {
+	margin-left: 10px;
+}
+/* ======================
+	Schedule area End
+========================*/
+
+/* ======================
+	Footer area start
+========================*/
+.footer-area {
+	background-image: url(../images/footer-shap.svg);
+	background-size: cover;
+}
+
+.global-footer-content p {
+	color: #6a6a8b;
+	margin: 0;
+	font-size: 16px;
+}
+
+.footer-card {
+	box-shadow: 0 12px 22px rgba(63, 49, 178, 0.08), 0 6px 11px rgba(63, 49, 178, 0.04);
+	display: inline-block;
+	padding: 30px;
+	background: #fff;
+	border-radius: 4px;
+	width: 100%;
+}
+
+.icon-large {
+	width: 9%;
+	float: left;
+	overflow: hidden;
+	margin-top: 7px;
+}
+
+
+.global-footer-content {
+	overflow: hidden;
+	float: left;
+	width: 86%;
+	margin-left: 5%;
+	;
+}
+
+.global-footer-content h4 {
+	margin-bottom: 8px;
+}
+
+.global-footer-content.toolkit h4 {
+	color: #0061d9;
+}
+
+.global-footer-content.server h4 {
+	color: #48a792;
+}
+
+.footer-title h4 {
+	font-size: 20px;
+	margin-bottom: 20px;
+	font-weight: 500;
+}
+
+ul.footer-menu {
+	margin: 0;
+	padding: 0;
+}
+
+ul.footer-menu li {
+	display: block;
+}
+
+ul.footer-menu li a {
+	display: block;
+	color: #32325d;
+	font-size: 14px;
+	padding: 8px 0;
+	font-weight: 500;
+	opacity: .8;
+	transition: .3s;
+}
+
+ul.footer-menu li a i {
+	width: 20px;
+	font-size: 16px;
+	margin-right: 5px;
+	line-height: 20px;
+}
+
+ul.footer-menu li a:hover {
+	opacity: 1;
+	color: #3bb878;
+	transform: translateX(1px);
+}
+
+.footer-logo {
+	width: 150px;
+	margin: 15px auto;
+}
+
+.footer-bottom-content p {
+	font-size: 14px;
+	color: #61617c;
+	margin-bottom: 20px;
+}
+
+.footer-bottom-content p a {
+	color: #3bb878;
+	font-weight: 500;
+}
+
+.footer-area.section-padding {
+	padding-bottom: 0px;
+}
+
+.section-padding.footer-middle {
+	padding-bottom: 60px;
+}
+/* ======================
+	Footer area end
+========================*/

@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#2D9AED">
+    <title>AppsCode</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <!-- Bulma CSS -->
+    <link rel="stylesheet" href="assets/css/bulma.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body>
+    <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+    <![endif]-->
+    <!-- Header Area Start -->
+    <header id="header" class="header-area">
+        <div class="container is-fluid">
+            <div class="columns">
+                <div class="column is-12">
+                    <div class="navbar-area">
+                        <!-- Navbar area start -->
+                        <nav class="navbar" role="navigation" aria-label="main navigation">
+                            <div class="navbar-brand">
+                                <!-- Brand Logo start -->
+                                <a class="navbar-item logo-default" href="https://appscode.com">
+                                    <img src="assets/images/logo.svg" width="157" height="35" alt="">
+                                </a>
+                                <a class="navbar-item fixd-item" href="https://appscode.com">
+                                    <img src="assets/images/logo-color.svg" width="157" height="35" alt="">
+                                </a>
+                                <!-- Brand Logo end -->
+
+                                <!-- Mobile menu icon start -->
+                                <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+                                    data-target="navMenu">
+                                    <span aria-hidden="true"></span>
+                                    <span aria-hidden="true"></span>
+                                    <span aria-hidden="true"></span>
+                                </a>
+                                <!-- Mobile menu icon end -->
+                            </div>
+
+                            <div id="navMenu" class="navbar-menu">
+
+                                <div class="navbar-end">
+                                    <div class="main-menu">
+                                        <ul>
+                                            <li>
+                                                <a href="#">Products <span><i class="fa fa-sort-down"
+                                                            aria-hidden="true"></i></span></a>
+                                                <ul class="doropdown-menu">
+                                                    <li><a href="#"> Voyager </a></li>
+                                                    <li><a href="#"> KubeDB </a></li>
+                                                    <li><a href="#"> Pharmer </a></li>
+                                                    <li><a href="#"> Stash </a></li>
+                                                    <li><a href="#"> Service Broker </a></li>
+                                                    <li><a href="#"> Kubed </a></li>
+                                                    <li><a href="#"> Guard </a></li>
+                                                    <li><a href="#"> Swift </a></li>
+                                                    <li><a href="#"> Searchlight </a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#">Services</a></li>
+                                            <li><a href="#">Open Source</a></li>
+                                            <li><a href="#">Blog</a></li>
+                                            <li><a href="#">Contact</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="nav-button">
+                                        <a class="button">Forum <img src="assets/images/icon/discourse.png" alt=""></a>
+                                        <a class="button">Chat <img src="assets/images/icon/slack.png" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                        <!-- Navbar area end -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header Area End -->
+
+    <!-- Hero Area Start -->
+    <section class="hero-area ">
+        <div class="container section has-text-centered">
+            <!-- Hero area content start -->
+            <div class="hero-inner">
+                <h1>Voyager</h1>
+                <p>Secure HAProxy Ingress Controller for Kubernetes</p>
+                <!-- Hero area action button start -->
+                <div class="buttons buttons-area">
+                    <a href="#" class="button docs"><i class="fa fa-file-text-o" aria-hidden="true"></i> View Docs</a>
+                    <a href="#" class="button helen"><img src="assets/images/icon/helm_logo.png" alt=""> Helm Chart</a>
+                    <a href="#" class="button github"><i class="fa fa-github" aria-hidden="true"></i>Github</a>
+                </div>
+                <!-- Hero area action button end -->
+            </div>
+            <!-- Hero area content end -->
+        </div>
+    </section>
+    <!-- Hero Area End -->
+
+
+
+    <!-- Installation area start -->
+    <section id="installation" class="installation-area section-padding">
+        <div class="container section">
+            <div class="columns">
+                <div class="column is-4">
+                    <!-- Section title start -->
+                    <div class="section-title">
+                        <h2>Quick installation</h2>
+                        <p>Voyager can be installed using YAML files includes in the projects Github repository or using
+                            Helm chart. <a href="https://appscode.com/products/voyager/9.0.0/setup/install/"
+                                target="_blank">Learn more</a></p>
+                    </div>
+                    <!-- Section title end -->
+                </div>
+                <div class="column is-8">
+                    <!-- Tab area start -->
+                    <div class="tab-area">
+                        <div class="nav-menu-area">
+                            <button onclick="location.href='#script'" data-tab="script" class="b-nav-tab active">
+                                Script
+                            </button>
+                            <button onclick="location.href='#helm1'" data-tab="helm1" class="b-nav-tab">
+                                Helm Chart
+                            </button>
+                        </div>
+                        <div id="script" class="b-tab active">
+                            <textarea name="script" id="script1" cols="30" rows="10">curl -fsSL https://raw.githubusercontent.com/appscode/voyager/9.0.0/hack/deploy/voyager.sh \
+                               | bash -s -- --provider=$provider</textarea>
+                        </div>
+                        <div id="helm1" class="b-tab">
+                            <textarea name="helm" id="hlm" cols="30" rows="10">$ helm repo add appscode https://charts.appscode.com/stable/
+$ helm repo update 
+$ helm install appscode/voyager --name voyager-operator --version 9.0.0 \ --namespace kube-system \ --set cloudProvider= 
+$provider
+                            </textarea>
+                        </div>
+                    </div>
+                    <!-- Tab area end -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Installation area end -->
+
+
+    <!-- Product area start -->
+    <section id="products" class="products-area">
+        <div class="container section">
+            <div class="columns is-multiline">
+                <!-- Single product start -->
+                <div class="column is-4">
+                    <a href="https://appscode.com/products/voyager/9.0.0/guides/ingress/http/single-service/"
+                        target="_blank" class="single-product">
+                        <div class="icon">
+                            <img src="assets/images/icon/http.svg" alt="">
+                        </div>
+                        <div class="product-content">
+                            <h2>HTTP & TCP</h2>
+                            <p>Supports HTTP and TCP load balancing.</p>
+                        </div>
+                    </a>
+                </div>
+                <!-- Single product end -->
+
+                <!-- Single product start -->
+                <div class="column is-4">
+                    <a href="https://appscode.com/products/voyager/9.0.0/guides/ingress/tls/overview/" target="_blank"
+                        class="single-product">
+                        <div class="icon">
+                            <img src="assets/images/icon/ssl.svg" alt="">
+                        </div>
+                        <div class="product-content">
+                            <h2>SSL</h2>
+                            <p>Supports SANS certificates, TLS-SNI, AWS Certificate Manager</p>
+                        </div>
+                    </a>
+                </div>
+                <!-- Single product end -->
+
+                <!-- Single product start -->
+                <div class="column is-4">
+                    <a href="https://appscode.com/products/voyager/9.0.0/setup/install/" target="_blank"
+                        class="single-product">
+                        <div class="icon">
+                            <img src="assets/images/icon/platform.svg" alt="">
+                        </div>
+                        <div class="product-content">
+                            <h2>Platform support</h2>
+                            <p>Works in cloud or bare metal clusters</p>
+                        </div>
+                    </a>
+                </div>
+                <!-- Single product end -->
+
+                <!-- Single product start -->
+                <div class="column is-4">
+                    <a href="https://appscode.com/products/voyager/9.0.0/guides/ingress/monitoring/haproxy-stats/"
+                        target="_blank" class="single-product">
+                        <div class="icon">
+                            <img src="assets/images/icon/haproxy.svg" alt="">
+                        </div>
+                        <div class="product-content">
+                            <h2>HAProxy</h2>
+                            <p>Built on top of battle tested open source load balancer</p>
+                        </div>
+                    </a>
+                </div>
+                <!-- Single product end -->
+
+                <!-- Single product start -->
+                <div class="column is-4">
+                    <a href="https://appscode.com/products/voyager/9.0.0/guides/ingress/monitoring/using-builtin-prometheus/"
+                        target="_blank" class="single-product">
+                        <div class="icon">
+                            <img src="assets/images/icon/prometheus.svg" alt="">
+                        </div>
+                        <div class="product-content">
+                            <h2>Prometheus</h2>
+                            <p>Comes with built-in support for Prometheus</p>
+                        </div>
+                    </a>
+                </div>
+                <!-- Single product end -->
+
+                <!-- Single product start -->
+                <div class="column is-4">
+                    <a href="https://appscode.com/products/voyager/9.0.0/guides/certificate/" target="_blank"
+                        class="single-product">
+                        <div class="icon">
+                            <img src="assets/images/icon/encrypt.svg" alt="">
+                        </div>
+                        <div class="product-content">
+                            <h2>Let's Encrypt</h2>
+                            <p>Issue free SSL certificates from Let's Encrypt via HTTP or DNS challenge</p>
+                        </div>
+                    </a>
+                </div>
+                <!-- Single product end -->
+            </div>
+        </div>
+    </section>
+    <!-- Product area End -->
+
+
+    <!-- Schedule area start -->
+    <section id="schedule" class="schedule-area section-padding">
+        <div class="container section">
+            <!-- Single schedul start -->
+            <div class="columns has-text-centered">
+                <div class="column">
+                    <div class="schedule-title">
+                        <h2>Take your team where it needs to go.</h2>
+                        <p>Create your cluster in minutes. Our team is here to help and would be happy to chat with you.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Single schedul end -->
+
+
+            <!-- Single schedul Start -->
+            <div class="columns has-text-centered">
+                <div class="schedule-button">
+                    <a href="https://appscode.com/contact/sales/" target="_blank" class="button demo-btn">SCHEDULE A
+                        DEMO</a>
+                    <a href="https://discourse.appscode.com/" target="_blank" class="button join-us">JOIN US ON OUR <img
+                            src="assets/images/icon/slack.png" alt=""></a>
+                </div>
+            </div>
+            <!-- Single schedul end -->
+        </div>
+    </section>
+    <!-- Schedule area End -->
+
+
+    <!-- Footer area start -->
+    <footer id="footer" class="footer-area section-padding ">
+        <div class="container section">
+            <!-- Footer top start -->
+            <div class="columns">
+                <div class="column is-10 is-offset-1">
+                    <div class="columns is-variable is-8">
+                        <div class="column is-half">
+                            <a href="https://appscode.com/opensource/" target="_blank" class="footer-card">
+                                <div class="icon-large">
+                                    <img src="assets/images/icon/ac-toolkit.svg" alt="">
+                                </div>
+                                <div class="global-footer-content toolkit">
+                                    <h4>Explore Our Open Source toolkit</h4>
+                                    <p>Testing & Deploying Containerized Apps.</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="column is-half">
+                            <a href="https://appscode.com/opensource/" target="_blank" class="footer-card">
+                                <div class="icon-large">
+                                    <img src="assets/images/icon/ac-services.png" alt="">
+                                </div>
+                                <div class="global-footer-content server">
+                                    <h4>Explore Our Servers</h4>
+                                    <p>Run AppsCode On Your Servers</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer top end -->
+
+            <!-- Footer middle start -->
+            <div class="columns section-padding footer-middle">
+                <!-- single footer widget start -->
+                <div class="column is-3">
+                    <div class="footer-widget">
+                        <div class="footer-title">
+                            <h4>Offerings</h4>
+                            <ul class="footer-menu">
+                                <li><a href="#">Products</a></li>
+                                <li><a href="#">Services</a></li>
+                                <li><a href="#">Open Source</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- single footer widget end -->
+
+                <!-- single footer widget start -->
+                <div class="column is-2">
+                    <div class="footer-widget">
+                        <div class="footer-title">
+                            <h4>Help</h4>
+                            <ul class="footer-menu">
+                                <li><a href="#">Forum</a></li>
+                                <li><a href="#">Slack</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- single footer widget end -->
+
+                <!-- single footer widget start -->
+                <div class="column is-2">
+                    <div class="footer-widget">
+                        <div class="footer-title">
+                            <h4>Company</h4>
+                            <ul class="footer-menu">
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Sales Inquiry</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- single footer widget end -->
+
+                <!-- single footer widget start -->
+                <div class="column is-3">
+                    <div class="footer-widget">
+                        <div class="footer-title">
+                            <h4>Legal</h4>
+                            <ul class="footer-menu">
+                                <li><a href="#">Terms of Service</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Service Level Agreement</a></li>
+                                <li><a href="#">Security</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- single footer widget end -->
+
+                <!-- single footer widget start -->
+                <div class="column is-2">
+                    <div class="footer-widget">
+                        <div class="footer-title">
+                            <h4>Connect</h4>
+                            <ul class="footer-menu">
+                                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a></li>
+                                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i>Facbook</a></li>
+                                <li><a href="#"><i class="fa fa-github" aria-hidden="true"></i>GitHub</a></li>
+                                <li><a href="#"><i class="fa fa-ship"></i>Docker</a></li>
+                                <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i>Youtube</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- single footer widget end -->
+            </div>
+            <!-- Footer middle end -->
+
+            <!-- Footer bottom start -->
+            <div class="columns footer-bottom-area">
+                <div class="column">
+                    <div class="footer-bottom-content has-text-centered">
+                        <div class="footer-logo">
+                            <img src="assets/images/logo-color.svg" alt="">
+                        </div>
+                        <p>All rights reserved © 2018. Appscode, Inc.. | <a href="#">Regulations</a> and <a
+                                href="#">Cookies Policy</a></p>
+                        <p>+1 (650) 241-8486 | <a href="mailto:support@appscode.com">support@appscode.com</a></p>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer bottom end -->
+        </div>
+    </footer>
+    <!-- Footer area end -->
+
+
+    <!-- Main JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
